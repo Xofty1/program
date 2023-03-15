@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include <QMessageBox>
 #include <QCursor>
+#include <QtWidgets>
+#include <QStyleFactory>
 #include <QMouseEvent>
 #include <QCloseEvent>// библиотека с функциями обработчика закрытия окон
 #include <QFileDialog> //библиоетека с диалоговыми окнами
@@ -38,6 +40,10 @@ private slots:
     void to_flag_is_0();
     void open_flag();
     void save_without_window();
+    void on_Light_triggered();
+
+    void on_Dark_triggered();
+
 private:
     Ui::MainWindow *ui;
     bool message = 1;
